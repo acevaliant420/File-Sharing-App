@@ -1,6 +1,17 @@
 :root{
   --main-bg-color: #eff5fe;
   --border-color: #0288d147;
+  --primary: #4E60FF;
+  --primary-light: #F3F4FF;
+  --white: #fff;
+  --dark: #2B2B43;
+  --grey: #83859C;
+  --grey-light: #C7C8D2;
+  --grey-lightest: #EDEEF2;
+  --error: #FF5C60;
+
+  --breakpoint-mobile: 768px;
+  --breakpoint-desktop: 1110px;
 }
 
 body, html{
@@ -50,7 +61,69 @@ body, .dropzone{
   display: none;
 }
 
-.BrowseBtn{
-  color: #2196f3;
+button {
   cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: 'Arial';
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  transition: box-shadow .15s ease-in-out;
 }
+
+.one h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.one h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #5685ea;
+}
+
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+.one h1:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #00164c;
+} 
