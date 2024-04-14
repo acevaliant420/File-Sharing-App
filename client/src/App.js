@@ -58,6 +58,8 @@ function App() {
                 />               
             </div>
         </div>
+
+        <a class = "link" href={result} target="_blank">{result}</a>
     </div>
     </section>
 
