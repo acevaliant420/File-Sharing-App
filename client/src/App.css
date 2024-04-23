@@ -22,7 +22,7 @@ body, html{
   margin: 0%;
 }
 
-body, .dropzone, .link{
+body, .dropzone, .link, .container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,11 +32,16 @@ body, .dropzone, .link{
 .upload-container{
   background: #ffffff;
   border-radius: 25px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropzone{
+.container{
+  background: #ffffff;
+  border-radius: 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dropzone, .container{
   width: 500px;
   min-height: 200px;
 
@@ -135,4 +140,10 @@ h1 em {
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+input[type="email"] {
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
 }
