@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Subscription</title>
+    <title>ShareIt</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div className="one">
+        <h1>ShareIt : A File Sharing App</h1>
+    </div>
     <div class="container">
         <h4>Send Link to Your Email</h4>
         <form id="emailForm">
@@ -19,7 +23,7 @@
     <script src="script.js"></script>
     <script>
         function goBack() {
-            window.history.back();
+            window.location.href = 'http://localhost:3000/';
         }
     </script>
 </body>

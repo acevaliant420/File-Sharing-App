@@ -37,13 +37,7 @@ function App() {
         getImage();
     }, [file]);
 
-    useEffect(() => {
-        // Retrieve result from local storage on component mount
-        const storedResult = localStorage.getItem("uploadedFile");
-        if (storedResult) {
-            setResult(storedResult);
-        }
-    }, []);
+
 
     return (
         <section className="App">
@@ -72,7 +66,8 @@ function App() {
                 <button
                     type="submit"
                     onClick={() => {
-                        const sendLinkUrl = `http://localhost:5000/?result=${(result)}`;
+                        const sendLinkUrl = `http://localhost:5000/?result=${(result)}&fileName=${(file.name)}`;
+
                         window.location.href = sendLinkUrl;
                     }}
                 >

@@ -6,9 +6,14 @@ document.getElementById('emailForm').addEventListener('submit', async function (
     const urlParams = new URLSearchParams(queryString);
     const result = urlParams.get('result');
 
+    const newp = window.location.search;
+    const url = new URLSearchParams(newp);
+    const name = urlParams.get('fileName');
+
     const payload = {
         email: email,
-        result: result // Include the 'result' parameter in the payload
+        result: result, 
+        name: name // Include the 'result' parameter in the payload
     };
 
     const response = await fetch('/subscribe', {
