@@ -17,8 +17,8 @@ app.post('/subscribe', (req, res) => {
         port: 587,
         secure: false, // Use `true` for port 465, `false` for all other ports
         auth: {
-          user: "rajatlovescoding@gmail.com",
-          pass: "vkrz rcrn nyge dily",
+          user: "***",
+          pass: "***",
         },
     });
 
